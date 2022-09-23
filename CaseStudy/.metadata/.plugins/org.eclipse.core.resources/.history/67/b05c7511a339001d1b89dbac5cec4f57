@@ -1,0 +1,38 @@
+package com.example.test;
+
+import org.junit.jupiter.api.Test;
+
+import com.sonata.mvc.model.Products;
+
+public class Producttest {
+	private String s;
+    public Producttest(String s) 
+    {
+        @Test
+        public void test() {
+     Products pn=new Products( "car");
+        assertEquals(pn.getText(),"car");   
+}
+}
+}
+
+
+
+
+/*@SpringBootTest
+@ActiveProfiles("test")
+
+public class Producttest {
+  
+   
+   @Autowired
+   private Products products;
+
+	@Test
+	 public void whenProdIdIsProvided_thenRetrievedProdIdIsCorrect() {
+	      Mockito.when(products.getProdId()).thenReturn("Product Id");
+	      long testName = Products.getProdId();
+	      Assert.assertEquals(" Product Id", testName);
+	   }
+	}*/
+
